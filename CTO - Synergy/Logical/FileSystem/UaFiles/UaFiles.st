@@ -4,7 +4,7 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 	END_IF;
 	CASE Step OF
 		0:
-			// prepare file system
+			// Prepare File Systems
 			UaSrv_GetNamespaceIndex_0(Execute := FALSE);
 			Step := Step + 1;
 		1:
