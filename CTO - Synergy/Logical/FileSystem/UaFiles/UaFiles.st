@@ -61,7 +61,7 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 								fiMode := fiREAD_WRITE;
 							END_IF
 						END_IF
-					END_IF
+					END_IF 
 					BrFileDevices.FileDevice1.FileSystem.Dir1.File1.Open.Step := 21;
 				21:
 					FileOpen_0(enable := TRUE, pDevice := ADR(BrFileDevices.FileDevice1.Path), pFile := ADR(BrFileDevices.FileDevice1.FileSystem.Dir1.File1.FileName), mode := fiMode);
