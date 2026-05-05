@@ -4,7 +4,7 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 	END_IF;
 	CASE Step OF
 		0:
-			// prepare file system
+			// Prepare File Systems
 			UaSrv_GetNamespaceIndex_0(Execute := FALSE);
 			Step := Step + 1;
 		1:
@@ -20,7 +20,7 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 				END_IF
 				IF (UaSrv_GetNamespaceIndex_0.Error = 1) THEN
 					NamespaceIndex := 0;
-					ErrorID := UaSrv_GetNamespaceIndex_0.Error;
+					ErrorID := UaSrv_GetNamespaceIndex_0.Error; 
 					Step := Step + 10000;
 				END_IF
 			END_IF
@@ -61,7 +61,7 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 								fiMode := fiREAD_WRITE;
 							END_IF
 						END_IF
-					END_IF
+					END_IF 
 					BrFileDevices.FileDevice1.FileSystem.Dir1.File1.Open.Step := 21;
 				21:
 					FileOpen_0(enable := TRUE, pDevice := ADR(BrFileDevices.FileDevice1.Path), pFile := ADR(BrFileDevices.FileDevice1.FileSystem.Dir1.File1.FileName), mode := fiMode);
