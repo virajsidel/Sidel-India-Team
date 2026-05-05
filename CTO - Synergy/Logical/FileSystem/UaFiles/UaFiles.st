@@ -388,7 +388,7 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 				0: // start operate
 					BrFileDevices.FileDevice1.FileSystem.Dir1.CreateFile.UaSrv_MethodOperate(Execute := FALSE);
 					BrFileDevices.FileDevice1.FileSystem.Dir1.CreateFile.Step := 10;
-				10: // check if method called
+				10: // Check if method called
 					BrFileDevices.FileDevice1.FileSystem.Dir1.CreateFile.UaSrv_MethodOperate(Execute := TRUE,
 						Action  := UaMoa_CheckIsCalled,
 						MethodName := 'Dir1_CreateFile');
@@ -414,7 +414,7 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 						IF FileCreate_0.status = 0 THEN
 							BrFileDevices.FileDevice1.FileSystem.Dir1.CreateFile.fileHandle := FileCreate_0.ident;
 							IF BrFileDevices.FileDevice1.FileSystem.Dir1.CreateFile.requestFileOpen = TRUE THEN
-								//BrFileDevices.FileDevice1.FileSystem.Dir1.File1.Size := FileOpen_0.filelen;
+								//BrFileDevices.FileDevice1.FileSystem.Dir1.File1.Size := FileOpen_0.filelen; (Commented Variable)(Calculate length)
 								BrFileDevices.FileDevice1.FileSystem.Dir1.File1.OpenCount := BrFileDevices.FileDevice1.FileSystem.Dir1.File1.OpenCount +1;
 								BrFileDevices.FileDevice1.FileSystem.Dir1.File1.FileName := BrFileDevices.FileDevice1.FileSystem.Dir1.CreateFile.fileName;
 								fiOffset := 0;
@@ -507,4 +507,5 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 
 	END_CASE;
 	Status := Step;
+	DemoVariable := 1;
 END_FUNCTION_BLOCK
