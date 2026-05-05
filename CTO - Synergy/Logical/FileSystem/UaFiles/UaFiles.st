@@ -507,5 +507,5 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 
 	END_CASE;
 	Status := Step;
-	DemoVariable := 1; //This is a demo variable
+	DemoVariable := 1; //This is a demo variables
 END_FUNCTION_BLOCK
