@@ -49,7 +49,7 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 							BrFileDevices.FileDevice1.FileSystem.Dir1.File1.Open.Step := 0;
 						END_IF
 					END_IF
-				20: // execute method code
+				20: // Execute method code
 					FileOpen_0(enable := FALSE);
 					IF BrFileDevices.FileDevice1.FileSystem.Dir1.File1.Open.mode = 1 THEN
 						fiMode := fiREAD_ONLY;
@@ -128,7 +128,7 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 							BrFileDevices.FileDevice1.FileSystem.Dir1.File1.Close.Step := 0;
 						END_IF
 					END_IF
-				20: // execute method code
+				20: // Execute method code
 					FileClose_0(enable := FALSE);
 					BrFileDevices.FileDevice1.FileSystem.Dir1.File1.Close.Step := 21;
 				21:
@@ -163,7 +163,7 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 					END_IF
 			END_CASE;
 		
-			// execute method Read()
+			// Execute method Read()
 
 			CASE BrFileDevices.FileDevice1.FileSystem.Dir1.File1.Read.Step OF
 				0: // start operate
@@ -292,7 +292,7 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 					END_IF
 			END_CASE;
 
-			// execute method GetPosition()
+			// Execute method GetPosition()
 
 			CASE BrFileDevices.FileDevice1.FileSystem.Dir1.File1.GetPosition.Step OF
 				0: // start operate
@@ -382,7 +382,7 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 					END_IF
 			END_CASE;
 
-			// execute method CreateFile()
+			// Execute method CreateFile()
 
 			CASE BrFileDevices.FileDevice1.FileSystem.Dir1.CreateFile.Step OF
 				0: // start operate
