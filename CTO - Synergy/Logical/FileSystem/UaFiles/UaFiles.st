@@ -20,7 +20,7 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 				END_IF
 				IF (UaSrv_GetNamespaceIndex_0.Error = 1) THEN
 					NamespaceIndex := 0;
-					ErrorID := UaSrv_GetNamespaceIndex_0.Error;
+					ErrorID := UaSrv_GetNamespaceIndex_0.Error; 
 					Step := Step + 10000;
 				END_IF
 			END_IF
