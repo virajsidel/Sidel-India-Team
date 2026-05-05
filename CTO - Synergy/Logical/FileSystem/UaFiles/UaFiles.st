@@ -414,7 +414,7 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 						IF FileCreate_0.status = 0 THEN
 							BrFileDevices.FileDevice1.FileSystem.Dir1.CreateFile.fileHandle := FileCreate_0.ident;
 							IF BrFileDevices.FileDevice1.FileSystem.Dir1.CreateFile.requestFileOpen = TRUE THEN
-								//BrFileDevices.FileDevice1.FileSystem.Dir1.File1.Size := FileOpen_0.filelen;
+								//BrFileDevices.FileDevice1.FileSystem.Dir1.File1.Size := FileOpen_0.filelen; (Commented Variable)
 								BrFileDevices.FileDevice1.FileSystem.Dir1.File1.OpenCount := BrFileDevices.FileDevice1.FileSystem.Dir1.File1.OpenCount +1;
 								BrFileDevices.FileDevice1.FileSystem.Dir1.File1.FileName := BrFileDevices.FileDevice1.FileSystem.Dir1.CreateFile.fileName;
 								fiOffset := 0;
