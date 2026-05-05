@@ -25,7 +25,7 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 				END_IF
 			END_IF
 		2:
-			// Standardized comment added by Sam
+			// Standardized comment added by Viraj
 			//Execute method open ()
 
 			CASE BrFileDevices.FileDevice1.FileSystem.Dir1.File1.Open.Step OF
