@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="6.0.1.120"?>
+<OpcUaSource FileVersion="10">
+  <Aliases>
+    <ACLAliases>
+      <ACL Id="1">
+        <ACE RoleName="Administrators" Access="0x10E5" />
+        <ACE RoleName="Everyone" Access="0x10A5" />
+      </ACL>
+    </ACLAliases>
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases>
+      <EngineeringUnit Id="1" UnitId="5067857" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="cubic metre" Symbol="m³" />
+    </EngineeringUnitAliases>
+  </Aliases>
+  <Module Name="&lt;Default&gt;">
+    <GlobalVariables Name="Global Variables" />
+    <Task Name="FTTask">
+      <Variable Name="FileDevices" RecursiveEnable="1">
+        <Variable Name="FileDeviceCount" ValueAttributeOf="ns=6;i=6001" />
+        <Variable Name="FileDevice1">
+          <Variable Name="Free" ValueAttributeOf="ns=6;i=6009" />
+          <Variable Name="Label" ValueAttributeOf="ns=6;i=6010" />
+          <Variable Name="Path" ValueAttributeOf="ns=6;i=6011" />
+          <Variable Name="SerialNumber" ValueAttributeOf="ns=6;i=6012" />
+          <Variable Name="Size" ValueAttributeOf="ns=6;i=6013" />
+          <Variable Name="DeviceType" ValueAttributeOf="ns=6;i=6014" />
+          <Variable Name="VendorName" ValueAttributeOf="ns=6;i=6015" />
+          <Variable Name="FileSystem">
+            <Variable Name="Dir1">
+              <Variable Name="DirectoryName" ValueAttributeOf="ns=6;i=6024" />
+              <Variable Name="File1">
+                <Variable Name="CreationTime" ValueAttributeOf="ns=6;i=6038" />
+                <Variable Name="FileName" ValueAttributeOf="ns=6;i=6039" />
+                <Variable Name="IsOpenExclusive" ValueAttributeOf="ns=6;i=6040" />
+                <Variable Name="LastAccessTime" ValueAttributeOf="ns=6;i=6041" />
+                <Variable Name="LastWriteTime" ValueAttributeOf="ns=6;i=6042" />
+                <Variable Name="MimeType" ValueAttributeOf="ns=6;i=6052" />
+                <Variable Name="OpenCount" ValueAttributeOf="ns=6;i=6030" />
+                <Variable Name="Size" ValueAttributeOf="ns=6;i=6034" />
+                <Variable Name="UserWritable" ValueAttributeOf="ns=6;i=6035" />
+                <Variable Name="Writable" ValueAttributeOf="ns=6;i=6036" />
+              </Variable>
+            </Variable>
+            <Variable Name="DirectoryName" ValueAttributeOf="ns=6;i=6016" />
+          </Variable>
+        </Variable>
+      </Variable>
+      <Method Name="File1_Open" ImplementationOf="ns=6;i=7011" />
+      <Method Name="File1_Close" ImplementationOf="ns=6;i=7009" />
+      <Method Name="File1_Read" ImplementationOf="ns=6;i=7012" />
+      <Method Name="File1_GetPosition" ImplementationOf="ns=6;i=7010" />
+      <Method Name="File1_SetPosition" ImplementationOf="ns=6;i=7013" />
+      <Method Name="File1_Write" ImplementationOf="ns=6;i=7014" />
+      <Method Name="Dir1_CreateFile" ImplementationOf="ns=6;i=7006" />
+    </Task>
+  </Module>
+</OpcUaSource>

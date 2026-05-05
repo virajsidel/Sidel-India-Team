@@ -1,0 +1,59 @@
+OPCUA_METHOD File1_Open
+	ARG_INPUT
+		mode : Byte := FileDevices.FileDevice1.FileSystem.Dir1.File1.Open.mode;
+	END_ARG
+	ARG_OUTPUT
+		fileHandle : UInt32 := FileDevices.FileDevice1.FileSystem.Dir1.File1.Open.fileHandle;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD File1_Close
+	ARG_INPUT
+		fileHandle : UInt32 := FileDevices.FileDevice1.FileSystem.Dir1.File1.Close.fileHandle;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD File1_Read
+	ARG_INPUT
+		fileHandle : UInt32 := FileDevices.FileDevice1.FileSystem.Dir1.File1.Read.fileHandle;
+		length : Int32 := FileDevices.FileDevice1.FileSystem.Dir1.File1.Read.length;
+	END_ARG
+	ARG_OUTPUT
+		data : BrUaByteStringFile := FileDevices.FileDevice1.FileSystem.Dir1.File1.Read.data;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD File1_Write
+	ARG_INPUT
+		fileHandle : UInt32 := FileDevices.FileDevice1.FileSystem.Dir1.File1.Write.fileHandle;
+		data : BrUaByteStringFile := FileDevices.FileDevice1.FileSystem.Dir1.File1.Write.data;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD File1_GetPosition
+	ARG_INPUT
+		fileHandle : UInt32 := FileDevices.FileDevice1.FileSystem.Dir1.File1.GetPosition.fileHandle;
+	END_ARG
+	ARG_OUTPUT
+		position : UInt32 := FileDevices.FileDevice1.FileSystem.Dir1.File1.GetPosition.position;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD File1_SetPosition
+	ARG_INPUT
+		fileHandle : UInt32 := FileDevices.FileDevice1.FileSystem.Dir1.File1.SetPosition.fileHandle;
+		position : UInt32 := FileDevices.FileDevice1.FileSystem.Dir1.File1.SetPosition.position;
+	END_ARG
+END_OPCUA_METHOD
+
+OPCUA_METHOD Dir1_CreateFile
+	ARG_INPUT
+		fileName : String := FileDevices.FileDevice1.FileSystem.Dir1.CreateFile.fileName;
+		requestFileOpen : Boolean := FileDevices.FileDevice1.FileSystem.Dir1.CreateFile.requestFileOpen;
+	END_ARG
+	ARG_OUTPUT
+		fileNodeId : UANodeID := FileDevices.FileDevice1.FileSystem.Dir1.CreateFile.fileNodeId;
+		fileHandle : UInt32 := FileDevices.FileDevice1.FileSystem.Dir1.CreateFile.fileHandle;
+	END_ARG
+END_OPCUA_METHOD
+

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="OpcUaCs" PackageType="OpcUaCs" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">UaCsConfig.uacfg</Object>
+    <Object Type="File">UaDvConfig.uadcfg</Object>
+    <Object Type="File" Description="OPC UA FileSystem default view">UaFiles.uad</Object>
+    <Object Type="File" Description="OPC UA File Devices information model">filedevices.uanodeset</Object>
+    <Object Type="File" Description="OPC UA File Transfer information model">filetransfer.uanodeset</Object>
+  </Objects>
+</Package>

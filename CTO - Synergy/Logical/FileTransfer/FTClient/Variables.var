@@ -1,0 +1,6 @@
+VAR
+	
+	OpcConnect : OpcConnectType;
+	OpcReadfile : OpcReadfileType;
+
+END_VAR

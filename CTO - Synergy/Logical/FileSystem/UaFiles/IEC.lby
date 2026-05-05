@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.7.2.90?>
+<Library SubType="IEC" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File Description="OPC UA FileSystem data types">UaFiles.typ</File>
+    <File Description="OPC UA FileSystem FBK interface">UaFiles.fun</File>
+    <File Description="OPC UA FileSystem implementation">UaFiles.st</File>
+  </Files>
+</Library>

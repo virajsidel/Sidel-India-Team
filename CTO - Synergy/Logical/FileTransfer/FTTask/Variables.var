@@ -1,0 +1,6 @@
+VAR
+
+	FileSystem : UaFileSystem;						(* file system function block *)
+	FileDevices : UaBrFileDevicesType;				(* file devices type variable *)
+	
+END_VAR
