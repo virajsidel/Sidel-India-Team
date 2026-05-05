@@ -496,7 +496,7 @@ FUNCTION_BLOCK UaFileSystem (* file system implementation *)
 					IF NOT BrFileDevices.FileDevice1.FileSystem.Dir1.Delete.UaSrv_MethodOperate.Busy THEN
 						IF BrFileDevices.FileDevice1.FileSystem.Dir1.Delete.UaSrv_MethodOperate.Done THEN
 							BrFileDevices.FileDevice1.FileSystem.Dir1.Delete.LastErrorID:= 0;
-							BrFileDevices.FileDevice1.FileSystem.Dir1.Delete.Step := 0; // method is finished, wait again for call
+							BrFileDevices.FileDevice1.FileSystem.Dir1.Delete.Step := 0; // method is completed, wait again for call
 						END_IF
 						IF BrFileDevices.FileDevice1.FileSystem.Dir1.Delete.UaSrv_MethodOperate.Error THEN
 							BrFileDevices.FileDevice1.FileSystem.Dir1.Delete.LastErrorID:= BrFileDevices.FileDevice1.FileSystem.Dir1.Delete.UaSrv_MethodOperate.ErrorID;
